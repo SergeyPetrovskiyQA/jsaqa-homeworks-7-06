@@ -1,0 +1,27 @@
+{
+  "name": "7.6-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test:mobile:headless:chrome": "cypress run --config-file mobile.config.js --headless --browser chrome",
+    "test:mobile:headed:chrome": "cypress run --config-file mobile.config.js --headed --browser chrome",
+    "test:mobile:headless:electron": "cypress run --config-file mobile.config.js --headless --browser electron",
+    "test:mobile:headed:electron": "cypress run --config-file mobile.config.js --headed --browser electron",
+    "test:laptop:headless:chrome": "cypress run --config-file laptop.config.js --headed --browser chrome",
+    "test:laptop:headed:chrome": "cypress run --config-file laptop.config.js --headed --browser chrome",
+    "test:laptop:headless:electron": "cypress run --config-file laptop.config.js --headed --browser electron",
+    "test:laptop:headed:electron": "cypress run --config-file laptop.config.js --headed --browser electron"
+  },
+  "keywords": [
+    "test",
+    "cypress"
+  ],
+  "author": "SergeyESh",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.11.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
